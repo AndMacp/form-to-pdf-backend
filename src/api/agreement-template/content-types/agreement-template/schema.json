@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "agreement_templates",
+  "info": {
+    "singularName": "agreement-template",
+    "pluralName": "agreement-templates",
+    "displayName": "agreement-template",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    }
+  }
+}
