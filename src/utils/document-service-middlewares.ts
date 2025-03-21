@@ -15,11 +15,14 @@ const formToPdfMiddleware = () => {
         contentType: 'application/pdf',
       })
 
-      const uploadRes = await fetch('http://localhost:1337/api/upload', {
-        method: 'POST',
-        body: formData,
-        headers: formData.getHeaders(),
-      })
+      const uploadRes = await fetch(
+        'https://form-to-pdf-backend-production-46e9.up.railway.app/api/upload',
+        {
+          method: 'POST',
+          body: formData,
+          headers: formData.getHeaders(),
+        }
+      )
 
       const uploadedFile = (await uploadRes.json())[0]
 
